@@ -8,11 +8,11 @@
 // Output: "fl"
 
 var longestCommonPrefix = function(strs) {
-    var longestPrefix = '';
+    let longestPrefix = '';
     if (strs.length > 0) {
         longestPrefix = strs[0];
-        for (var i = 1; i < strs.length; i++) {
-            for (var j = 0; j < longestPrefix.length; j++) {
+        for (let i = 1; i < strs.length; i++) {
+            for (let j = 0; j < longestPrefix.length; j++) {
                 if (strs[i][j] != longestPrefix[j]) {
                     longestPrefix = longestPrefix.slice(0, j)
                 }

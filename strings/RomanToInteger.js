@@ -17,7 +17,7 @@
 // C can be placed before D (500) and M (1000) to make 400 and 900.
 // Given a roman numeral, convert it to an integer. Input is guaranteed to be within the range from 1 to 3999.
 
-var romanToInt = function(s) {
+const romanToInt = function(s) {
 
     Romans = {
         'I': 1,
@@ -30,7 +30,7 @@ var romanToInt = function(s) {
     };
 
     total = 0
-    for (var i = s.length - 1; i >= 0; i--) {
+    for (let i = s.length - 1; i >= 0; i--) {
         total += Romans[s[i]];
         if (Romans[s[i]] > Romans[s[i - 1]]) {
             total -= Romans[s[i - 1]]

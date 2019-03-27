@@ -16,8 +16,8 @@
 // Output: true
 
 var isValid = function(s) {
-    var openings = []
-    for (var i = 0; i < s.length; i++) {
+    let openings = []
+    for (let i = 0; i < s.length; i++) {
         if (s[i] === "(" || s[i] === "[" || s[i] === "{") {
             openings.push(s[i])
         }
