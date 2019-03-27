@@ -12,6 +12,6 @@
 
 
 var lengthOfLastWord = function(s) {
-    const arr = s.trim().split(' ');
+    var arr = s.trim().split(' ');
     return arr.pop().length;
 };
